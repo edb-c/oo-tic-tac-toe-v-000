@@ -69,7 +69,7 @@ def turn
   
   if valid_move?(index)
     player_token = current_player
-    move(@board, index, player_token)
+    move(index, player_token)
     display_board(@board)
   else
     puts "That selection is not valid. Please choose a different number 1-9:"
