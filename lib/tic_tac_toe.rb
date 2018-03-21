@@ -67,7 +67,7 @@ def turn
   
   index = input_to_index(user_input)
   
-  if valid_move?(@board, index)
+  if valid_move?(index)
     player_token = current_player(@board)
     move(@board, index, player_token)
     display_board(@board)
