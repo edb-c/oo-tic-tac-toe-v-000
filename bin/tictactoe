@@ -2,7 +2,8 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-
+#Instantiate an instance of TicTacToe
+#Start the game by calling #play on that instance.
 
 game = TicTacToe.new
 game.play
