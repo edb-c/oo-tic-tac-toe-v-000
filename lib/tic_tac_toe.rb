@@ -130,7 +130,7 @@ def winner
   end
 end
 
-def play(board)
+def play
   until over?(board) == true
     turn(board)
   end
