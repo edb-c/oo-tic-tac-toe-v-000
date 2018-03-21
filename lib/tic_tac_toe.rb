@@ -11,9 +11,9 @@ WIN_COMBINATIONS = [
   [6, 4, 2]
 ]
 =begin
-
-
-
+initialize method should set a 
+@board variable equal to a new, 
+empty array that represents the game board.
 =end
 def initialize
   @board = Array.new(9, " ")
