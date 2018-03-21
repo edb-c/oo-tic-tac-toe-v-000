@@ -1,3 +1,5 @@
+class TicTacToe
+  
 WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -135,6 +137,8 @@ def play(board)
     puts "Cat's Game!"
   end
 end
+end #end class TicTacToe
+
 
 =begin
 puts "Welcome to Tic Tac Toe!"
