@@ -45,8 +45,8 @@ end
 
 def turn_count
   counter = 0
-  @board.each do |i|
-    if i == "X" || i == "O"
+  @board.each do |index|
+    if index == "X" || index == "O"
       counter += 1
     end
   end
@@ -57,7 +57,7 @@ end
 
 def current_player
     #  turn_count(board) % 2 == 0 ? "X" : "O"
-    turn_count(@board).to_i.even? == true ? "X" : "O"
+    turn_count.to_i.even? == true ? "X" : "O"
 end
 
 
