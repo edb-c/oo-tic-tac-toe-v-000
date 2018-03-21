@@ -73,7 +73,7 @@ def turn
     display_board
   else
     puts "That selection is not valid. Please choose a different number 1-9:"
-    turn(board) #recursive
+    turn #recursive
   end
 end
 
