@@ -55,22 +55,22 @@ def turn_count
 end
 
 
-def current_player(board)
+def current_player
     #  turn_count(board) % 2 == 0 ? "X" : "O"
-    turn_count(board).to_i.even? == true ? "X" : "O"
+    turn_count(@board).to_i.even? == true ? "X" : "O"
 end
 
 
-def turn(board)
+def turn
   puts "Please choose a number 1-9:"
   user_input = gets.chomp
   
   index = input_to_index(user_input)
   
-  if valid_move?(board, index)
-    player_token = current_player(board)
-    move(board, index, player_token)
-    display_board(board)
+  if valid_move?(@board, index)
+    player_token = current_player(@board)
+    move(@board, index, player_token)
+    display_board(@board)
   else
     puts "That selection is not valid. Please choose a different number 1-9:"
     turn(board) #recursive
