@@ -136,8 +136,10 @@ def play(board)
   end
 end
 
+=begin
 puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 display_board(board)
 play(board)
+=end
