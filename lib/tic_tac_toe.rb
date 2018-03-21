@@ -122,7 +122,7 @@ def winner
   if index == false
     return nil
   else
-    if board[index[0]] == "X"
+    if @board[index[0]] == "X"
       return "X"
     else
       return "O"
@@ -136,8 +136,8 @@ def play(board)
   end
 
   if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  elsif draw?(board)
+    puts "Congratulations #{winner}!"
+  elsif draw?
     puts "Cat's Game!"
   end
 end
