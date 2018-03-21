@@ -70,7 +70,7 @@ def turn
   if valid_move?(index)
     player_token = current_player
     move(index, player_token)
-    display_board(@board)
+    display_board
   else
     puts "That selection is not valid. Please choose a different number 1-9:"
     turn(board) #recursive
