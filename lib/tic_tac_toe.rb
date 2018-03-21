@@ -43,9 +43,9 @@ def valid_move?(index)
   index.between?(0,8) && !position_taken?(@board, index)
 end
 
-def turn_count(board)
+def turn_count
   counter = 0
-  board.each do |i|
+  @board.each do |i|
     if i == "X" || i == "O"
       counter += 1
     end
